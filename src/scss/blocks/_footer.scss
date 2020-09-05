@@ -1,4 +1,7 @@
 .footer {
   padding: 60px 0;
   background-color: rgba(2, 172, 143, 0.2);
+  @media (max-width: 767.98px) {
+    text-align: center;
+  }
 }

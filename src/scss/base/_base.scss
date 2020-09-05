@@ -19,4 +19,12 @@ body {
 .help,
 .work-stages {
   padding: 80px 0;
+
+  @media (max-width: 1199.98px) {
+    padding: 50px 0;
+  }
+
+  @media (max-width: 767.98px) {
+    padding: 30px 0;
+  }
 }

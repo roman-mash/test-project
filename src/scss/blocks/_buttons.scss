@@ -31,6 +31,11 @@
   &:hover {
     background-color: rgba(2, 172, 143, 0.4);
   }
+
+  @media (max-width: 1199.98px) {
+    font-size: 13px;
+    line-height: 16px;
+  }
 }
 
 .btn-order-yellow {
@@ -49,6 +54,19 @@
   &:hover {
     background-color: #ffa524;
   }
+
+  @media (max-width: 991.98px) {
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @media (max-width: 767.98px) {
+    padding: 8px 13px;
+    font-size: 13px;
+    line-height: 16px;
+  }
 }
 
 .btn-order-green {
@@ -65,6 +83,50 @@
   border-radius: 3px;
 
   transition: background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: #018b7e;
+  }
+  @media (max-width: 991.98px) {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 10px 15px;
+  }
+
+  @media (max-width: 767.98px) {
+    margin-top: 14px;
+    margin-bottom: 32px;
+    padding: 8px 13px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+.btn-prev {
+  opacity: 1;
+  width: 30px;
+  height: 60px;
+  border-radius: 0 100px 100px 0;
+  background-color: #02ac8f;
+  background-image: url("./../img/btn-slider.png");
+  background-repeat: no-repeat;
+  background-position: 7px 22px;
+
+  &:hover {
+    background-color: #018b7e;
+  }
+}
+
+.btn-next {
+  opacity: 1;
+  width: 30px;
+  height: 60px;
+  border-radius: 0 100px 100px 0;
+  background-color: #02ac8f;
+  background-image: url("./../img/btn-slider.png");
+  background-repeat: no-repeat;
+  background-position: 7px 22px;
+  transform: rotate(180deg);
 
   &:hover {
     background-color: #018b7e;

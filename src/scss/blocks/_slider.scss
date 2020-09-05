@@ -4,6 +4,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -300px 0;
+
+  @media (max-width: 1199.98px) {
+    padding: 40px 0;
+    background-position: initial;
+  }
+
+  @media (max-width: 767.98px) {
+    background-position: -50px 0;
+  }
 }
 
 .slider__title {
@@ -14,6 +23,18 @@
   line-height: 59px;
   letter-spacing: 0.01em;
   color: #ffffff;
+
+  @media (max-width: 1199.98px) {
+    font-size: 30px;
+    line-height: 37px;
+    max-width: 350px;
+  }
+
+  @media (max-width: 767.98px) {
+    font-size: 22px;
+    line-height: 27px;
+    max-width: 250px;
+  }
 }
 
 .slider__title-green {
@@ -28,4 +49,14 @@
   line-height: 22px;
   letter-spacing: 0.01em;
   color: rgba(255, 255, 255, 0.8);
+  @media (max-width: 1199.98px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (max-width: 767.98px) {
+    font-size: 13px;
+    line-height: 16px;
+    max-width: 260px;
+  }
 }

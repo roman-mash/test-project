@@ -65,10 +65,7 @@ gulp.task("copy:js", function (callback) {
 
 // Слежение за HTML и CSS и обновление браузера
 gulp.task("watch", function () {
-  watch(
-    ["./build/index.html", "./build/js/**/*.*", "./build/img/**/*.*"],
-    gulp.parallel(browserSync.reload)
-  );
+  watch(["./build/index.html", "./build/js/**/*.*", "./build/img/**/*.*"], gulp.parallel(browserSync.reload));
 
   // Запуск слежения и компиляции SCSS с задержкой
   watch("./src/scss/**/*.scss", function () {
@@ -94,13 +91,17 @@ gulp.task("clean:build", function () {
   return del("./build");
 });
 
+gulp.task("clean:docs", function () {
+  return del("./docs");
+});
+
+gulp.task("copy:docs", function (callback) {
+  return gulp.src("./build/**/*.*").pipe(gulp.dest("./docs/"));
+  callback();
+});
+
+gulp.task("docs", gulp.series("clean:docs", "copy:docs"));
+
 // Дефолтный таск (задача по умолчанию)
 // Запускаем одновременно задачи server и watch
-gulp.task(
-  "default",
-  gulp.series(
-    gulp.parallel("clean:build"),
-    gulp.parallel("scss", "copy:html", "copy:img", "copy:js"),
-    gulp.parallel("server", "watch")
-  )
-);
+gulp.task("default", gulp.series(gulp.parallel("clean:build"), gulp.parallel("scss", "copy:html", "copy:img", "copy:js"), gulp.parallel("server", "watch")));
