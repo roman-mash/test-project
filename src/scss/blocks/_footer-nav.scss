@@ -1,0 +1,29 @@
+.footer__nav {
+}
+
+.footer-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-nav__item {
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.footer-nav__link {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}

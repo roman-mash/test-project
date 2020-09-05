@@ -1,0 +1,30 @@
+.header-nav {
+}
+
+.header-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.header-nav__item {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.header-nav__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #000000;
+
+  &:hover {
+    color: #000000;
+  }
+}

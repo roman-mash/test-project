@@ -4,6 +4,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 :active,
@@ -11,4 +13,10 @@ body {
 :focus {
   outline: 0 !important;
   outline-offset: 0 !important;
+}
+
+.about,
+.help,
+.work-stages {
+  padding: 80px 0;
 }

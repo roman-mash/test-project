@@ -1,0 +1,40 @@
+.copyright {
+  padding: 20px 0;
+  background-color: #02ac8f;
+
+  p {
+    margin: 0;
+  }
+}
+
+.copyright__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.year {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.author {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.author__link {
+  font-weight: 600;
+  color: #ffffff;
+
+  &:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}

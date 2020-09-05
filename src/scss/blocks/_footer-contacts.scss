@@ -1,0 +1,57 @@
+.footer__contacts {
+  .menu__tel {
+    display: block;
+    margin: 0 0 15px;
+  }
+}
+
+.footer__address {
+  margin: 0 0 40px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer__social {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer__social-item {
+  display: block;
+  margin-right: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: #02ac8f;
+  border-radius: 50%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.instagram {
+  background-image: url("./../img/instagram.png");
+  background-repeat: no-repeat;
+  background-position: 9px 9px;
+}
+
+.whatsapp {
+  background-image: url("./../img/whatsapp.png");
+  background-repeat: no-repeat;
+  background-position: 9px 9px;
+}
+
+.vk {
+  background-image: url("./../img/vk.png");
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
+}
+
+.youtube {
+  background-image: url("./../img/youtube.png");
+  background-repeat: no-repeat;
+  background-position: 8px 8px;
+}
