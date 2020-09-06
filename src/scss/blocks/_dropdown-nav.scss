@@ -74,6 +74,10 @@
     letter-spacing: 0.01em;
     text-transform: uppercase;
     color: #000000;
+
+    &:hover {
+      color: #000000;
+    }
   }
 
   .active {
